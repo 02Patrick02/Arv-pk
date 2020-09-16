@@ -1,0 +1,7 @@
+C:\Users\Elev\source\repos\Arv pk\Arv pk\bin\Debug\Arv pk.exe.config
+C:\Users\Elev\source\repos\Arv pk\Arv pk\bin\Debug\Arv pk.exe
+C:\Users\Elev\source\repos\Arv pk\Arv pk\bin\Debug\Arv pk.pdb
+C:\Users\Elev\source\repos\Arv pk\Arv pk\obj\Debug\Arv pk.csprojAssemblyReference.cache
+C:\Users\Elev\source\repos\Arv pk\Arv pk\obj\Debug\Arv pk.csproj.CoreCompileInputs.cache
+C:\Users\Elev\source\repos\Arv pk\Arv pk\obj\Debug\Arv pk.exe
+C:\Users\Elev\source\repos\Arv pk\Arv pk\obj\Debug\Arv pk.pdb
