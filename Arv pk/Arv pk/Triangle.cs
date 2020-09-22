@@ -6,15 +6,21 @@ using System.Threading.Tasks;
 
 namespace Arv
 {
-    class Triangle : Shape
+    class Triangle : IShape
     {
-        public Triangle(int height, int width) : base(height, width) { }
-        public override double Area()
+        double width, height;
+        public Triangle(double h, double w)
+        {
+            height = h;
+            width = w;
+        }
+
+        public double area()
         {
             double triArea = (width * height) / 2;
             return triArea;
         }
-        public override double Circumferance()
+        public double circumference()
         {
             double triCircumferance = height + width + (Math.Sqrt(width * width + height * height));
             return triCircumferance;
