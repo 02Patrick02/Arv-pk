@@ -10,42 +10,80 @@ namespace Arv
     {
         static void Main(string[]args)
         {
+            IShape obj;
+
             Console.WriteLine("1. Rectangle");
-            Console.WriteLine("2. Triangle");
-            Console.WriteLine("3. Circle");
+            Console.WriteLine("2. Circle");
+            Console.WriteLine("3. Triangle");
 
             string choice = Console.ReadLine();
             switch (choice)
             {
-                case "1";
+                case "1":
                     Console.WriteLine("insert width");
-                    double width = double.Parse(Console.ReadLine());
+                    double Width = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("insert height");
+                    double Height = double.Parse(Console.ReadLine());
+
+                    obj = new Rectangle(Width, Height);
+
+                    Console.WriteLine("area: " + obj.area());
+
+                    Console.WriteLine("circumference: " + obj.circumference());
+
+
+                    Console.ReadKey();
+                    Console.Clear();
+                    Main(null);
+
+                    break;
+
+                case "2":
+                    Console.WriteLine("insert radie");
+                    double Radie = double.Parse(Console.ReadLine());
+
+
+                    obj = new Circle(Radie);
+
+                    Console.WriteLine("area: " + obj.area());
+
+                    Console.WriteLine("circumference: " + obj.circumference());
+
+
+                    Console.ReadKey();
+                    Console.Clear();
+                    Main(null);
+
+                    break;
+
+                case "3":
+                    Console.WriteLine("insert width");
+                    Width = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("insert height");
+                    Height = double.Parse(Console.ReadLine());
+
+                    obj = new Rectangle(Width, Height);
+
+                    Console.WriteLine("area: " + obj.area());
+
+                    Console.WriteLine("circumference: " + obj.circumference());
+
+
+                    Console.ReadKey();
+                    Console.Clear();
+                    Main(null);
+
+                    break;
+
+                 default:
+                    Main(null);
+                    break;
             }
+
             
-            Console.WriteLine("Ange en höjd");
-            int height = int.Parse(Console.ReadLine());
-            double radie = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Ange en bredd");
-            int width = int.Parse(Console.ReadLine());
-            Rectangle rectangle = new Rectangle(height, width);
-            Triangle triangle = new Triangle(height, width);
-            Circle circle = new Circle(radie);
-
-
-            Console.WriteLine("Rektangelns area: " + rectangle.area());
-            Console.WriteLine("Rektangelns omkrets: " + rectangle.circumference());
-            Console.WriteLine("");
-
-
-
-            Console.WriteLine("Triangelns area: " + triangle.area());
-            Console.WriteLine("Triangelns omkrets: " + triangle.circumference());
-            Console.ReadLine();
-
-            Console.WriteLine("Cirkelns area: " + circle.area());
-            Console.WriteLine("Cirkelns omkrets: " + circle.circumference());
-            Console.ReadLine();
+            
         }
     }
 }
